@@ -13,11 +13,12 @@ section{
 textarea{
 	resize: vertical;
 }
-.center{
-	text-align: center;
-}
+
 .center h1{
-	margin-bottom: 10px;
+	text-align: center;
+	h1{
+		margin-bottom: 10px;
+	}
 }
 
 	/*fuentes o tipografia*/
@@ -53,11 +54,11 @@ p{
 	letter-spacing: -1px;
 	padding-top: 9px;
 	font-weight: bold;
-	line-height: 1;
-}
-#logo.hover{
-	color: #fff;
-	text-decoration: none;
+	line-height: 1px;
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+	}
 }
 
 	/*pie de pagina*/
@@ -66,21 +67,21 @@ footer{
 	padding-top: 5px;
 	border-top: 1px solid #eaeaea;
 	color: #999;
-}
-footer a{
-	/*color: #555;*/
-}
-footer a:hover{
-	color: #222;
-}
-footer small{
-	float: left;
-}
-footer ul{
-	float: right;
-	list-style: none;
-}
-footer ul li{
-	float: left;
-	margin-left: 10px;
+	a{
+		color: #555;
+		&:hover{
+			color: #222;
+		}
+	}
+	small{
+		float: left;
+	}
+ 	ul{
+		float: right;
+		list-style: none;
+		li{
+			float: left;
+			margin-left: 10px;
+		}
+	}
 }
