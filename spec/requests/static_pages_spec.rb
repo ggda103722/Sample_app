@@ -20,4 +20,10 @@ describe "StaticPages" do
     it { should_not have_title('Sample App / Acerca de')}
   end 
 
+  describe "Pagina de Contacto" do
+    before {visit contacto_path}
+    it { should have_content('Contacto')}
+    it { should_not have_title('Sample App / Contacto')}
+  end 
+
 end
