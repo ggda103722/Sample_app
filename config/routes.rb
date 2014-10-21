@@ -1,8 +1,9 @@
 SampleApp::Application.routes.draw do
   
-  get "user/new"
+  resources :users
+  get "users/new"
   root 'static_pages#home'
-  match '/registro', to:'user#new', via: 'get'
+  match '/registro', to:'users#new', via: 'get'
   match '/ayuda', to:'static_pages#help', via: 'get'
   match '/acerca_de', to:'static_pages#acerca_de', via: 'get'
   match '/contacto', to:'static_pages#contacto', via: 'get'
