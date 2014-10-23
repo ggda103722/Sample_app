@@ -33,7 +33,7 @@ describe "UserPages" do
         fill_in "Confirmation", with: "password"
       end
       it "debe crear un usuario" do
-        expect { click_button submit }.not_to change(User, :count).by(1)
+        expect { click_button submit }.to change(User, :count).by(1)
       end
     end
   end
